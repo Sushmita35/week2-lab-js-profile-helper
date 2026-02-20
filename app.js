@@ -143,9 +143,9 @@ addBtn.addEventListener('click', () => {
   /* ---------- VALIDATION ---------- */
 
   if (name === '') {
-    formMsg.textContent = 'Name is required.';
-    return;
-  }
+  formMsg.textContent = 'Please enter a student name before submitting.';
+  return;
+}
 
   if (country === '') {
     formMsg.textContent = 'Please select a country.';
