@@ -1,0 +1,96 @@
+# <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    
+</body>
+</html><!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 2 Lab — Student Profile Helper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="card">
+    <h1 id="pageTitle">Student Profile Helper</h1>
+    <p id="subtitle">Week 2 — JavaScript Foundations</p>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Add a student</h2>
+
+      <label>
+        Name
+        <input id="nameInput" type="text" placeholder="e.g. Asha" />
+      </label>
+
+      <label>
+        Country
+        <select id="countryInput">
+          <option value="">-- choose --</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="Denmark">Denmark</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Age
+        <input id="ageInput" type="number" min="0" max="120" placeholder="e.g. 21" />
+      </label>
+
+      <label>
+        Skills (comma-separated)
+        <input id="skillsInput" type="text" placeholder="e.g. HTML, CSS, JS" />
+      </label>
+
+      <div class="row">
+        <button id="addBtn" type="button">Add student</button>
+        <button id="clearBtn" type="button" class="secondary">Clear form</button>
+      </div>
+
+      <p id="formMsg" class="msg">Waiting…</p>
+    </section>
+
+    <section class="card">
+      <h2>Students</h2>
+
+      <div class="row">
+        <button id="showAllBtn" type="button">Show all</button>
+        <button id="filterBtn" type="button" class="secondary">Filter (Nepal/Bangladesh)</button>
+        <button id="randomBtn" type="button" class="secondary">Pick random</button>
+      </div>
+
+      <ul id="studentList" class="list"></ul>
+
+      <div class="row">
+        <button id="avgBtn" type="button">Average age</button>
+        <button id="resetBtn" type="button" class="danger">Reset list</button>
+      </div>
+
+      <p id="summary" class="msg">No students yet.</p>
+    </section>
+
+    <section class="card">
+      <h2>Bonus: declarative vs imperative (hover)</h2>
+      <p>Hover the link. You will implement the hover effect with CSS first, then optionally with JavaScript.</p>
+      <a class="navLink" href="#">
+        <span class="icon" aria-hidden="true"></span>
+        <span>Home</span>
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
